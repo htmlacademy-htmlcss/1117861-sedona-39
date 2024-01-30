@@ -2,6 +2,7 @@
 
 * Студент: [Артем Азизов](https://up.htmlacademy.ru/htmlcss/39/user/1117861).
 * Наставник: `Неизвестно`.
+* Мой проект: [Седона](https://azart1.github.io/1117861-sedona-39/).
 
 ---
 

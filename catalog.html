@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Седона</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html"><img src="#" alt="Описание картинки"></a></li>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">О седоне</a></li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
+        <ul>
+          <li>Поиск</li>
+          <li>Лайк</li>
+          <li>Хочу сюда!</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Каталог гостиниц Седоны</h1>
+      <section>
+        <h2>Гостиницы Седоны</h2>
+        <ul class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <div>
+            <h3>Инфраструктура:</h3>
+            <ul>
+              <li>
+                <input type="checkbox" name="pool" id="pool" checked>
+                <label for="pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" id="parking" checked>
+                <label for="parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wi-fi" id="wi-fi">
+                <label for="wi-fi">Wi-Fi</label>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Тип жилья:</h3>
+            <ul>
+              <li>
+                <input type="radio" name="houses" id="hotel" value="Гостиница" checked>
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="radio" value="Мотель" name="houses" id="motel">
+                <label for="motel">Мотель</label>
+              </li>
+              <li>
+                <input type="radio" name="houses" id="apartments" value="Апартаменты">
+                <label for="apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Стоимость, ₽:</h3>
+            <div>
+              <input type="number" value="0">
+              <input type="number" value="9000">
+            </div>
+            <div>
+              <span>0--------0</span>
+            </div>
+          </div>
+          <div>
+            <input type="button" value="Применить">
+            <input type="reset" value="Сбросить">
+          </div>
+        </form>
+      </section>
+      <section>
+        <div>
+          <h2 class="visually-hidden">Результаты поиска жилья</h2>
+          <div>
+            <p>Найдено гостиниц: 38</p>
+          </div>
+          <div>
+            <form action="https://echo.htmlacademy.ru/" method="get">
+              <select>
+                <option>Сначала дешевые</option>
+                <option>Сначала дорогие</option>
+              </select>
+            </form>
+          </div>
+          <div>
+            <ul>
+              <li>таблица</li>
+              <li>слайды</li>
+              <li>список</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <img src="http://placehold.it/300x212" width="300" height="212" alt="Amara Resort & Spa">
+              <h3>Amara Resort & Spa</h3>
+              <table>
+                <tr>
+                  <td>Гостиница</td>
+                  <td>От 4000 ₽</td>
+                </tr>
+                <tr>
+                  <td>подробнее</td>
+                  <td>в избранное</td>
+                </tr>
+                <tr>
+                  <td>****</td>
+                  <td>Рейтинг: 8,5</td>
+                </tr>
+              </table>
+            </li>
+            <li>
+              <img src="http://placehold.it/300x212" width="300" height="212" alt="Amara Resort & Spa">
+              <h3>Villas at Poco Diablo</h3>
+              <table>
+                <tr>
+                  <td>Гостиница</td>
+                  <td>От 5000 ₽</td>
+                </tr>
+                <tr>
+                  <td>подробнее</td>
+                  <td>в избранное</td>
+                </tr>
+                <tr>
+                  <td>****</td>
+                  <td>Рейтинг: 9,2</td>
+                </tr>
+              </table>
+            </li>
+            <li>
+              <img src="http://placehold.it/300x212" width="300" height="212" alt="Amara Resort & Spa">
+              <h3>Desert Quail Inn</h3>
+              <table>
+                <tr>
+                  <td>Гостиница</td>
+                  <td>От 2500 ₽</td>
+                </tr>
+                <tr>
+                  <td>подробнее</td>
+                  <td>в избранное</td>
+                </tr>
+                <tr>
+                  <td>***</td>
+                  <td>Рейтинг: 6,9</td>
+                </tr>
+              </table>
+            </li>
+            <li>
+              <img src="http://placehold.it/300x212" width="300" height="212" alt="Amara Resort & Spa">
+              <h3>GreenTree Inn</h3>
+              <table>
+                <tr>
+                  <td>Гостиница</td>
+                  <td>От 1500 ₽</td>
+                </tr>
+                <tr>
+                  <td>подробнее</td>
+                  <td>в избранное</td>
+                </tr>
+                <tr>
+                  <td>**</td>
+                  <td>Рейтинг: 5,0</td>
+                </tr>
+              </table>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="">...</a>
+          <a href="#">10</a>
+        </div>
+      </section>
+      <section>
+        <h2>Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form>
+          <input type="text" value="Ваш e-mail">
+          <input type="submit" value="Подписаться">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="#" width="24" height="14" alt="Описание картинки">
+              <span class="visually-hidden">Мы в ВКонтакте</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="#" width="18" height="16" alt="Описание картинки">
+              <span class="visually-hidden">Мы в Телеграм</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="#" width="22" height="17" alt="Описание картинки">
+              <span class="visually-hidden">Мы в YouTube</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </div>
+      <div>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" alt="Описание картинки"></a>
+      </div>
+    </footer>
+  </body>
+
+</html>

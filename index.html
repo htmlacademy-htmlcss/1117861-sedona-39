@@ -4,10 +4,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона</title>
   </head>
 
   <body>
+    <div class="index-wrapper">
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
@@ -21,7 +23,7 @@
           <li class="navigation-user-item"><img class="navigation-icon-likes" src="images/icon-heart.svg"><span class="visually-hidden">Понравишееся</span>
             <span class="navigation-user-like">12</span>
           </li>
-          <li class="navigation-item"><span class="visually-hidden">Хочу сюда!</span></li>
+          <li class="navigation-item"><a class="navigation-btn" href="#">Хочу сюда!</a></li>
         </ul>
       </nav>
     </header>
@@ -35,8 +37,8 @@
         <p class="reasons-decription">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="reasons-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="reasons-list">
-          <li class="reasons-item">
-            <h3 class="reasons-heading">Настоящий городок</h3>
+          <li class="reasons-item  reasons-item-blue">
+            <h3 class="reasons-title">Настоящий городок</h3>
             <p class="reasons-content">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img class="reasons-img-home"  src="images/reasons-town.jpg" alt="Дома Седоны">
           </li>
@@ -56,8 +58,8 @@
             <p class="reasons-content">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
 
-          <li class="reasons-item">
-            <h3 class="reasons-heading">Там есть мост дьявола</h3>
+          <li class="reasons-item reasons-item-blue">
+            <h3 class="reasons-title">Там есть мост дьявола</h3>
             <img class="reasons-img-bridge" src="images/reasons-bridge.jpg" alt="Мост дьявола">
             <p class="reasons-content">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
@@ -65,19 +67,19 @@
         </ul>
       </section>
       <section class="advantages">
-        <h2 class="visually-hidden">Наши преимущества</h2>
-        <p class="advantages-description">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+        <h2 class="advantages-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <p class="advantages-description">Опытный персонал и качественное обслуживание!</p>
         <ul class="advantages-list">
           <li class="advantages-item">
-            <h3 class="advantages-title">Жильё</h3>
+            <h3 class="advantages-subtitle">Жильё</h3>
             <p class="advantages-content">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="advatages-item">
-            <h3 class="advantages-title">Еда</h3>
+            <h3 class="advantages-subtitle">Еда</h3>
             <p class="advantages-content">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="advatages-item">
-            <h3 class="advantages-title">Сувениры</h3>
+            <h3 class="advantages-subtitle">Сувениры</h3>
             <p class="advantages-content">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
@@ -150,6 +152,7 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="images/logo-htmlacademy.svg" alt="Посетить сайт HTML Academy"></a>
       </div>
     </footer>
+    </div>
   </body>
 
 </html>

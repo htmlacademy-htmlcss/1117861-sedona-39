@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона</title>
   </head>
 
@@ -16,10 +17,12 @@
           <li class="navigation-item"><a class="navigation-link" href="#">О седоне</a></li>
           <li class="navigation-item"><a class="navigation-link" href="#">Гостиницы</a></li>
         </ul>
-        <ul class="navigation-user">
-          <li class="navigation-item"><img class="navigation-icon-search"  src="images/icon-search.svg"><span class="visually-hidden">Поиск</span></li>
-          <li class="navigation-item"><img class="navigation-icon-likes" src="images/icon-heart.svg"><span class="visually-hidden">Понравишееся</span></li>
-          <li class="navigation-item"><span class="visually-hidden">Хочу сюда!</span></li>
+        <ul class="navigation-user-list">
+          <li class="navigation-user-item"><img class="navigation-icon-search"  src="images/icon-search.svg"><span class="visually-hidden">Поиск</span></li>
+          <li class="navigation-user-item"><img class="navigation-icon-likes" src="images/icon-heart.svg"><span class="visually-hidden">Понравишееся</span>
+            <span class="navigation-user-like">12</span>
+          </li>
+          <li class="navigation-item"><a class="navigation-btn" href="#">Хочу сюда!</a></li>
         </ul>
       </nav>
     </header>
@@ -28,7 +31,7 @@
       <section class="catalog-filters filters">
         <h2 class="filters-title">Гостиницы Седоны</h2>
         <ul class="filters-breadcrumb breadcrumb-list">
-          <li class="breadcrumb-item"><a class="breadcrumb-link" href="index.html">Главная</a></li>
+          <li class="breadcrumb-item"><a class="breadcrumb-link" href="index.html"><span class="visually-hidden">Главная</span></a></li>
           <li class="breadcrumb-item"><a class="breadcrumb-link" href="#" aria-current="page">Гостиницы</a></li>
         </ul>
         <form class="filters-form form" action="https://echo.htmlacademy.ru/" method="get">
@@ -69,8 +72,8 @@
           <div>
             <h3 class="filters-subtitle">Стоимость, ₽:</h3>
             <div>
-              <input class="filters-scale" type="text" inputmode="numeric" pattern="\d*" value="0">
-              <input class="filters-scale" type="text" inputmode="numeric" pattern="\d*" value="9000">
+              <input class="filters-field" type="text" inputmode="numeric" pattern="\d*" value="0">
+              <input class="filters-field" type="text" inputmode="numeric" pattern="\d*" value="9000">
             </div>
             <div>
               <span>0--------0</span>
@@ -78,7 +81,7 @@
           </div>
           <div>
             <button class="filters-btn btn filters-btn-apply" type="submit" value="Применить">Применить</button>
-            <button class="filters-btn btn filers-reset" type="reset" value="Сбросить">Сбросить</button>
+            <button class="filters-btn btn filters-btn-reset" type="reset" value="Сбросить">Сбросить</button>
           </div>
         </form>
       </section>
@@ -90,15 +93,15 @@
           </div>
           <div class="sorting-group">
             <select class="result-sorting">
-              <option class="result-sorting-cheap">Сначала дешевые</option>
-              <option class="result-sorting-expensive">Сначала дорогие</option>
+              <option class="result-sorting-variant result-sorting-cheap">Сначала дешевые</option>
+              <option class="result-sorting-variant result-sorting-expensive">Сначала дорогие</option>
             </select>
           </div>
           <div class="view-group">
             <ul class="view-list">
-              <li class="view-item">Смотреть в виде сетки</li>
-              <li class="view-item">Смотреть расширенные карточки</li>
-              <li class="view-item">Смотреть списком</li>
+              <li class="view-item"><a class="view-link" href="#"></a><span class="visually-hidden">Смотреть в виде сетки</span></li>
+              <li class="view-item"><a class="view-link" href="#"></a><span class="visually-hidden">Смотреть в альбомном виде</span></li>
+              <li class="view-item"><a class="view-link" href="#"></a><span class="visually-hidden">Смотреть списком</span></li>
             </ul>
           </div>
         </div>
@@ -117,11 +120,16 @@
                   <td class="card-table-date card-price" >От 4000 ₽</td>
                 </tr>
                 <tr class="card-table-row">
-                  <td class="card-table-date card-more">подробнее</td>
-                  <td class="card-table-date card-favorite">в избранное</td>
+                  <td class="card-table-date card-btn card-more">подробнее</td>
+                  <td class="card-table-date card-btn card-favorite">в избранное</td>
                 </tr>
                 <tr>
-                  <td class="card-table-date card-stars">4 звезды</td>
+                  <td class="card-table-date card-stars">
+                    <span class="card-star"></span>
+                    <span class="card-star"></span>
+                    <span class="card-star"></span>
+                    <span class="card-star"></span>
+                    <span class="visually-hidden">4 звезды</span></td>
                   <td class="card-table-date card-rating">Рейтинг: 8,5</td>
                 </tr>
               </table>
@@ -139,11 +147,16 @@
                   <td class="card-table-date card-price" >От 5000 ₽</td>
                 </tr>
                 <tr class="card-table-row">
-                  <td class="card-table-date card-more">подробнее</td>
-                  <td class="card-table-date card-favorite">в избранное</td>
+                  <td class="card-table-date card-btn card-more">подробнее</td>
+                  <td class="card-table-date card-btn card-favorite card-favorite-active">в избранном</td>
                 </tr>
                 <tr>
-                  <td class="card-table-date card-stars">4 звезды</td>
+                  <td class="card-table-date card-stars">
+                    <span class="card-star"></span>
+                    <span class="card-star"></span>
+                    <span class="card-star"></span>
+                    <span class="card-star"></span>
+                    <span class="visually-hidden">4 звезды</span></td>
                   <td class="card-table-date card-rating">Рейтинг: 9,2</td>
                 </tr>
               </table>
@@ -161,11 +174,15 @@
                   <td class="card-table-date card-price" >От 2500 ₽</td>
                 </tr>
                 <tr class="card-table-row">
-                  <td class="card-table-date card-more">подробнее</td>
-                  <td class="card-table-date card-favorite">в избранное</td>
+                  <td class="card-table-date card-btn card-more">подробнее</td>
+                  <td class="card-table-date card-btn card-favorite">в избранное</td>
                 </tr>
                 <tr>
-                  <td class="card-table-date card-stars">3 звезды</td>
+                  <td class="card-table-date card-stars">
+                    <span class="card-star"></span>
+                    <span class="card-star"></span>
+                    <span class="card-star"></span>
+                    <span class="visually-hidden">3 звезды</span></td>
                   <td class="card-table-date card-rating">Рейтинг: 6,9</td>
                 </tr>
               </table>
@@ -183,32 +200,34 @@
                   <td class="card-table-date card-price" >От 1500 ₽</td>
                 </tr>
                 <tr class="card-table-row">
-                  <td class="card-table-date card-more">подробнее</td>
-                  <td class="card-table-date card-favorite">в избранное</td>
+                  <td class="card-table-date card-btn card-more">подробнее</td>
+                  <td class="card-table-date card-btn card-favorite">в избранное</td>
                 </tr>
                 <tr>
-                  <td class="card-table-date card-stars ">2 звезды</td>
+                  <td class="card-table-date card-stars ">
+                    <span class="card-star"></span>
+                    <span class="card-star"></span><span class="visually-hidden">2 звезды</span></td>
                   <td class="card-table-date card-rating">Рейтинг: 5,0</td>
                 </tr>
               </table>
             </li>
           </ul>
         </div>
-        <div>
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-          <a href="">...</a>
-          <a href="#">10</a>
-        </div>
+        <ul class="pagination-list">
+          <li class="pagination-item"><a class="pagination-link pagination-link-active" href="#">1</a></li>
+          <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+          <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+          <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
+          <li class="pagination-item pagination-item-dotted">...</li>
+          <li class="pagination-item"><a class="pagination-link" href="#">10</a></li>
+        </ul>
       </section>
-      <section>
-        <h2>Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form>
-          <input type="text" value="Ваш e-mail">
-          <input type="submit" value="Подписаться">
+      <section class="subscribe subscribe-catalog">
+        <h2 class="subscribe-catalog-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-catalog-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="subscribe-email" type="text" value="Ваш e-mail">
+          <a class="btn subscribe-btn">Подписаться</a>
         </form>
       </section>
     </main>

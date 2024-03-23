@@ -47,9 +47,6 @@ html {
   box-sizing: inherit;
 }
 
-a {
-  text-decoration: none;
-}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -79,6 +76,7 @@ body {
 
 .btn {
   font-family: "PT Sans", sans-serif;
+  text-decoration: none;
 }
 
 .index-wrapper {
@@ -127,6 +125,7 @@ body {
   text-align: center;
   padding: 21px 0;
   padding-top: 12px;
+  text-decoration: none;
 }
 .navigation-link:hover,
 .navigation-link:focus {
@@ -143,6 +142,7 @@ body {
 .navigation-link-logo {
   margin-right: 30px;
   padding: 0;
+  text-decoration: none;
 }
 
 .navigation-logo {
@@ -212,6 +212,7 @@ body {
   font-weight: 700;
   text-align: center;
   padding: 15px 12px;
+  text-decoration: none;
 }
 
 .navigation-btn {
@@ -632,6 +633,7 @@ body {
 
 .social-link {
   padding: 3px;
+  text-decoration: none;
 }
 
 .social-link svg {
@@ -653,6 +655,7 @@ body {
   line-height: 40px;
   text-transform: uppercase;
   color: var(--black);
+  text-decoration: none;
 }
 
 .contact-link:hover {
@@ -738,6 +741,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   color: var(--white);
+  text-decoration: none;
 }
 
 .breadcrumb-link:hover {
@@ -1240,6 +1244,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   color: var(--black);
+  text-decoration: none;
 }
 
 .card-type-home {
@@ -1265,6 +1270,7 @@ body {
   text-align: center;
   color: var(--white);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .card-more {
@@ -1390,6 +1396,7 @@ body {
   font-size: 20px;
   line-height: 60px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .pagination-link--current {

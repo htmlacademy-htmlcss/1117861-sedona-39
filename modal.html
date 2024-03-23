@@ -20,80 +20,86 @@
             </a>
           </div>
           <ul class="navigation-list">
-            <li class="navigation-item"><a class="navigation-link  navigation-link--current" href="index.html">Главная</a></li>
+            <li class="navigation-item"><a class="navigation-link  navigation-link--current"
+                href="index.html">Главная</a></li>
             <li class="navigation-item"><a class="navigation-link" href="#">О Седоне</a></li>
             <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
           </ul>
           <ul class="navigation-user-list">
             <li class="navigation-user-item">
               <a class="navigation-user-link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" class="navigation-icon-search"   width="20" height="20" >
-                  <path  d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0
-                   0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z"/></svg>
-                  <span class="visually-hidden">Поиск</span></a>
+                <svg xmlns="http://www.w3.org/2000/svg" class="navigation-icon-search" width="20" height="20">
+                  <path d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0
+                   0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" /></svg>
+                <span class="visually-hidden">Поиск</span></a>
             </li>
             <li class="navigation-user-item">
               <a class="navigation-user-link" href="#">
-                 <svg xmlns="http://www.w3.org/2000/svg" class="navigation-icon-likes" width="20" height="20" ><path  d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="navigation-icon-likes" width="20" height="20">
+                  <path
+                    d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
+                  </svg>
                 <span class="visually-hidden">Понравившиеся</span></a>
               <span class="navigation-user-like">12</span>
             </li>
-            <li class="navigation-user-item"><a class="navigation-btn" href="#">Хочу сюда!</a></li>
+            <li class="navigation-user-item"><a class="btn navigation-btn" href="#">Хочу сюда!</a></li>
           </ul>
         </nav>
       </header>
-      <div class="popup-bg" data-test="modal">
-        <div class="popup-module">
-          <h2 class="popup-title">Поиск гостиницы в Седоне</h2>
-          <a class="btn popup-close-btn" href="#"><span class="visually-hidden">Закрыть</span></a>
-          <form class="popup-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="popup-form-wrapper">
-              <div class="popup-wrapper-row">
-                <label class="popup-date popup-date-arrived" for="arrived">Дата заезда:</label>
-                <div class="popup-input-wrapper">
-                  <input class="popup-input popup-arrived" id="arrived" type="text" value="27 апреля 2020">
-                  <p class="popup-text popup-text-error">Мы не можем отправить вас в прошлое.</p>
-                  <p class="popup-text popup-text-info visually-hidden">На эти даты есть свободные номера. Пока
-                    есть.</p>
-                </div>
-              </div>
-              <div class="popup-wrapper-row">
-                <label class="popup-date popup-date-departure" for="departure">Дата выезда:</label>
-                <div class="popup-input-wrapper">
-                  <input class="popup-input popup-departure" id="departure" type="text" value="1 сентября 2023">
-                  <p class="popup-text popup-text-error visually-hidden">Мы не можем отправить вас в прошлое.</p>
-                  <p class="popup-text popup-text-info">На эти даты есть свободные номера. Пока есть.</p>
-                </div>
-              </div>
-              <div class="popup-wrapper-row">
-                <div class="popup-container">
-                  <label class="popup-date popup-adults" for="adults">Взрослые:</label>
-                  <div class="popup-box">
-                    <a class="popup-quantity popup-quantity-minus">-</a>
-                    <input class="popup-input  popup-input-number" id="adults" type="text" value="2">
-                    <a class="popup-quantity popup-quantity-plus">+</a>
+      <main class="main-index" data-test="main">
+        <div class="popup-bg" data-test="modal">
+          <div class="popup-module">
+            <h1 class="popup-title">Поиск гостиницы в Седоне</h1>
+            <a class="btn popup-close-btn" href="#"><span class="visually-hidden">Закрыть</span></a>
+            <form class="popup-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="popup-form-wrapper">
+                <div class="popup-wrapper-row">
+                  <label class="popup-date popup-date-arrived" for="arrived">Дата заезда:</label>
+                  <div class="popup-input-wrapper">
+                    <input class="popup-input popup-arrived" id="arrived" type="text" value="27 апреля 2020">
+                    <p class="popup-text popup-text-error">Мы не можем отправить вас в прошлое.</p>
+                    <p class="popup-text popup-text-info visually-hidden">На эти даты есть свободные номера. Пока
+                      есть.</p>
                   </div>
                 </div>
-                <div class="popup-container">
-                  <label class="popup-date popup-children" for="children">Дети:</label>
-                  <div class="popup-area">
-                    <a href="#" class="popup-info-btn">i</a>
-                    <p class="popup-info-block">Укажите количество детей, которые будут с вами, возраст которых от 6
-                      до 18 лет.
-                      Дети до 6 лет размещаются бесплатно.</p>
+                <div class="popup-wrapper-row">
+                  <label class="popup-date popup-date-departure" for="departure">Дата выезда:</label>
+                  <div class="popup-input-wrapper">
+                    <input class="popup-input popup-departure" id="departure" type="text" value="1 сентября 2023">
+                    <p class="popup-text popup-text-error visually-hidden">Мы не можем отправить вас в прошлое.</p>
+                    <p class="popup-text popup-text-info">На эти даты есть свободные номера. Пока есть.</p>
                   </div>
-                  <div class="popup-box">
-                    <a class="popup-quantity popup-quantity-minus">-</a>
-                    <input class="popup-input popup-input-number" id="children" type="text" value="2">
-                    <a class="popup-quantity popup-quantity-plus">+</a>
+                </div>
+                <div class="popup-wrapper-row">
+                  <div class="popup-container">
+                    <label class="popup-date popup-adults" for="adults">Взрослые:</label>
+                    <div class="popup-box">
+                      <a class="popup-quantity popup-quantity-minus">-</a>
+                      <input class="popup-input  popup-input-number" id="adults" type="text" value="2">
+                      <a class="popup-quantity popup-quantity-plus">+</a>
+                    </div>
+                  </div>
+                  <div class="popup-container">
+                    <label class="popup-date popup-children" for="children">Дети:</label>
+                    <div class="popup-area">
+                      <a href="#" class="popup-info-btn">i</a>
+                      <p class="popup-info-block">Укажите количество детей, которые будут с вами, возраст которых от 6
+                        до 18 лет.
+                        Дети до 6 лет размещаются бесплатно.</p>
+                    </div>
+                    <div class="popup-box">
+                      <a class="popup-quantity popup-quantity-minus">-</a>
+                      <input class="popup-input popup-input-number" id="children" type="text" value="2">
+                      <a class="popup-quantity popup-quantity-plus">+</a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <a class="btn popup-search-btn">Найти</a>
-          </form>
+              <a class="btn popup-search-btn">Найти</a>
+            </form>
+          </div>
         </div>
-      </div>
+      </main>
       <footer class="footer" data-test="footer">
         <div class="footer-wrapper">
           <ul class="footer-social social-list">

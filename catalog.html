@@ -12,7 +12,7 @@
 
   <body>
     <div class="index-wrapper">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="navigation">
           <div class="navigation-item-logo">
             <a class="navigation-link navigation-link-logo" href="index.html">
@@ -42,7 +42,7 @@
           </ul>
         </nav>
       </header>
-      <main class="main-catalog">
+      <main class="main-catalog" data-test="main">
         <h1 class="visually-hidden">Каталог гостиниц Седоны</h1>
         <section class="catalog-filters filters">
           <h2 class="filters-title">Гостиницы Седоны</h2>
@@ -57,7 +57,7 @@
             </li>
             <li class="breadcrumb-item"><a class="breadcrumb-link" href="#" aria-current="page">Гостиницы</a></li>
           </ul>
-          <form class="filters-form form" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="filters-form form" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
             <fieldset class="form-wrapper">
               <legend class="filters-subtitle">Инфраструктура:</legend>
               <ul class="filters-list">
@@ -122,7 +122,7 @@
             </div>
           </form>
         </section>
-        <section class="result">
+        <section class="result" data-test="catalog">
           <div class="result-wrapper">
             <h2 class="visually-hidden">Результаты поиска жилья</h2>
             <div class="result-group">
@@ -244,7 +244,7 @@
             </ul>
           </div>
         </section>
-        <section class="subscribe subscribe-catalog">
+        <section class="subscribe subscribe-catalog" data-test="subscribe">
           <h2 class="subscribe-catalog-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-catalog-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -253,7 +253,7 @@
           </form>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" data-test="footer">
         <div class="footer-wrapper">
           <ul class="footer-social social-list">
             <li class="social-item">

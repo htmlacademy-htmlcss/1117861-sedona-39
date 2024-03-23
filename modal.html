@@ -11,16 +11,16 @@
   </head>
 
   <body>
-    <div class="index-wrapper">
+    <div class="index-wrapper page-wrapper">
       <header class="page-header" data-test="header">
         <nav class="navigation">
           <div class="navigation-item-logo">
-            <a class="navigation-link navigation-link-logo" href="#">
+            <a class="navigation-link navigation-link-logo" href="index.html">
               <img class="navigation-logo" src="images/logo.svg" width="140" height="70" alt="Логотип сайта">
             </a>
           </div>
           <ul class="navigation-list">
-            <li class="navigation-item"><a class="navigation-link  navigation-link--current" href="#">Главная</a></li>
+            <li class="navigation-item"><a class="navigation-link  navigation-link--current" href="index.html">Главная</a></li>
             <li class="navigation-item"><a class="navigation-link" href="#">О Седоне</a></li>
             <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
           </ul>
@@ -42,84 +42,58 @@
           </ul>
         </nav>
       </header>
-      <main class="main-index" data-test="main">
-        <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-        <section class="promo" data-test="hero">
-          <h2 class="visually-hidden"> Welcome to the Gorgeous Sedona "Because the Grand Canyon sucks!"</h2>
-        </section>
-        <section class="reasons" data-test="advantages">
-          <h2 class="visually-hidden">Причины посетить Седону</h2>
-          <p class="reasons-decription">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="reasons-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-          <ul class="reasons-list">
-            <li class="reasons-item reasons-item-special ">
-              <div class="reasons-item-wrapper reasons-special">
-                <h3 class="reasons-title">Настоящий городок</h3>
-                <p class="reasons-content">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+      <div class="popup-bg" data-test="modal">
+        <div class="popup-module">
+          <h2 class="popup-title">Поиск гостиницы в Седоне</h2>
+          <a class="btn popup-close-btn" href="#"><span class="visually-hidden">Закрыть</span></a>
+          <form class="popup-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="popup-form-wrapper">
+              <div class="popup-wrapper-row">
+                <label class="popup-date popup-date-arrived" for="arrived">Дата заезда:</label>
+                <div class="popup-input-wrapper">
+                  <input class="popup-input popup-arrived" id="arrived" type="text" value="27 апреля 2020">
+                  <p class="popup-text popup-text-error">Мы не можем отправить вас в прошлое.</p>
+                  <p class="popup-text popup-text-info visually-hidden">На эти даты есть свободные номера. Пока
+                    есть.</p>
+                </div>
               </div>
-              <img class="reasons-img-home" width="800" height="385" src="images/reasons-town.jpg" alt="Дома Седоны">
-            </li>
-
-            <li class="reasons-item reasons-item-usually">
-              <h3 class="reasons-title">Небольшая площадь</h3>
-              <p class="reasons-content">Все достопримечательности находятся очень близко</p>
-            </li>
-
-            <li class="reasons-item reasons-item-usually reasons-item-dark">
-              <h3 class="reasons-title">Красивая <br> дорога</h3>
-              <p class="reasons-content">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-
-            <li class="reasons-item reasons-item-usually">
-              <h3 class="reasons-title">Мало <br> туристов</h3>
-              <p class="reasons-content">Большинство едет в Гранд Каньон и толпится там</p>
-            </li>
-            <li class="reasons-item reasons-item-special">
-              <img class="reasons-img-bridge" width="800" height="385" src="images/reasons-bridge.jpg"
-                alt="Мост дьявола">
-              <div class="reasons-item-wrapper reasons-special">
-                <h3 class="reasons-title">Там есть <br> мост дьявола</h3>
-                <p class="reasons-content">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <div class="popup-wrapper-row">
+                <label class="popup-date popup-date-departure" for="departure">Дата выезда:</label>
+                <div class="popup-input-wrapper">
+                  <input class="popup-input popup-departure" id="departure" type="text" value="1 сентября 2023">
+                  <p class="popup-text popup-text-error visually-hidden">Мы не можем отправить вас в прошлое.</p>
+                  <p class="popup-text popup-text-info">На эти даты есть свободные номера. Пока есть.</p>
+                </div>
               </div>
-            </li>
-
-          </ul>
-        </section>
-        <section class="advantages" data-test="service">
-          <h2 class="advantages-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-          <p class="advantages-description">Опытный персонал и качественное обслуживание!</p>
-          <ul class="advantages-list">
-            <li class="advantages-item advantages-item-houses">
-              <h3 class="advantages-subtitle">Жильё</h3>
-              <p class="advantages-content">Рекомендуем пожить <br> в настоящем мотеле,<br> всё как в кино!</p>
-            </li>
-            <li class="advantages-item advantages-item-foods">
-              <h3 class="advantages-subtitle">Еда</h3>
-              <p class="advantages-content">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!
-              </p>
-            </li>
-            <li class="advantages-item advantages-item-gifts">
-              <h3 class="advantages-subtitle">Сувениры</h3>
-              <p class="advantages-content">Не только китайского,<br> но и настоящего местного<br> производства!</p>
-            </li>
-          </ul>
-        </section>
-        <section class="search">
-          <h2 class="search-title">Заинтересовались?</h2>
-          <p class="search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
-            Седоне
-          </p>
-          <a class="btn search-modal-btn " href="modal.html">Поиск гостиницы в Седоне</a>
-        </section>
-        <section class="subscribe" data-test="subscribe">
-          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="get">
-            <input class="subscribe-email" type="text" placeholder="Ваш e-mail" required>
-            <a class="btn subscribe-btn" tabindex="0">Подписаться</a>
+              <div class="popup-wrapper-row">
+                <div class="popup-container">
+                  <label class="popup-date popup-adults" for="adults">Взрослые:</label>
+                  <div class="popup-box">
+                    <a class="popup-quantity popup-quantity-minus">-</a>
+                    <input class="popup-input  popup-input-number" id="adults" type="text" value="2">
+                    <a class="popup-quantity popup-quantity-plus">+</a>
+                  </div>
+                </div>
+                <div class="popup-container">
+                  <label class="popup-date popup-children" for="children">Дети:</label>
+                  <div class="popup-area">
+                    <a href="#" class="popup-info-btn">i</a>
+                    <p class="popup-info-block">Укажите количество детей, которые будут с вами, возраст которых от 6
+                      до 18 лет.
+                      Дети до 6 лет размещаются бесплатно.</p>
+                  </div>
+                  <div class="popup-box">
+                    <a class="popup-quantity popup-quantity-minus">-</a>
+                    <input class="popup-input popup-input-number" id="children" type="text" value="2">
+                    <a class="popup-quantity popup-quantity-plus">+</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="btn popup-search-btn">Найти</a>
           </form>
-        </section>
-      </main>
+        </div>
+      </div>
       <footer class="footer" data-test="footer">
         <div class="footer-wrapper">
           <ul class="footer-social social-list">

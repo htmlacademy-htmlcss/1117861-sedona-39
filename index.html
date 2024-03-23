@@ -12,58 +12,6 @@
 
   <body>
     <div class="index-wrapper">
-      <div class="popup-bg">
-        <div class="popup-module">
-          <h2 class="popup-title">Поиск гостиницы в Седоне</h2>
-          <a class="btn popup-close-btn" href="#"><span class="visually-hidden">Закрыть</span></a>
-          <form class="popup-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="popup-form-wrapper">
-              <div class="popup-wrapper-row">
-                <label class="popup-date popup-date-arrived" for="arrived">Дата заезда:</label>
-                <div class="popup-input-wrapper">
-                  <input class="popup-input popup-arrived" id="arrived" type="text" value="27 апреля 2020">
-                  <p class="popup-text popup-text-error">Мы не можем отправить вас в прошлое.</p>
-                  <p class="popup-text popup-text-info visually-hidden">На эти даты есть свободные номера. Пока
-                    есть.</p>
-                </div>
-              </div>
-              <div class="popup-wrapper-row">
-                <label class="popup-date popup-date-departure" for="departure">Дата выезда:</label>
-                <div class="popup-input-wrapper">
-                  <input class="popup-input popup-departure" id="departure" type="text" value="1 сентября 2023">
-                  <p class="popup-text popup-text-error visually-hidden">Мы не можем отправить вас в прошлое.</p>
-                  <p class="popup-text popup-text-info">На эти даты есть свободные номера. Пока есть.</p>
-                </div>
-              </div>
-              <div class="popup-wrapper-row">
-                <div class="popup-container">
-                  <label class="popup-date popup-adults" for="adults">Взрослые:</label>
-                  <div class="popup-box">
-                    <a class="popup-quantity popup-quantity-minus">-</a>
-                    <input class="popup-input  popup-input-number" id="adults" type="text" value="2">
-                    <a class="popup-quantity popup-quantity-plus">+</a>
-                  </div>
-                </div>
-                <div class="popup-container">
-                  <label class="popup-date popup-children" for="children">Дети:</label>
-                  <div class="popup-area">
-                    <a href="#" class="popup-info-btn">i</a>
-                    <p class="popup-info-block">Укажите количество детей, которые будут с вами, возраст которых от 6
-                      до 18 лет.
-                      Дети до 6 лет размещаются бесплатно.</p>
-                  </div>
-                  <div class="popup-box">
-                    <a class="popup-quantity popup-quantity-minus">-</a>
-                    <input class="popup-input popup-input-number" id="children" type="text" value="2">
-                    <a class="popup-quantity popup-quantity-plus">+</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a class="btn popup-search-btn">Найти</a>
-          </form>
-        </div>
-      </div>
       <header class="page-header" data-test="header">
         <nav class="navigation">
           <div class="navigation-item-logo">
@@ -161,7 +109,7 @@
           <p class="search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
             Седоне
           </p>
-          <a class="btn search-modal-btn ">Поиск гостиницы в Седоне</a>
+          <a class="btn search-modal-btn " href="modal.html">Поиск гостиницы в Седоне</a>
         </section>
         <section class="subscribe" data-test="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>

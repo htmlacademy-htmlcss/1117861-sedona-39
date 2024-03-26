@@ -86,8 +86,9 @@ body {
   background-color: var(--white);
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
+
 .page-wrapper {
-  background-color:var(--white);
+  background-color: var(--white);
 }
 
 .page-header {
@@ -123,16 +124,18 @@ body {
   color: var(--black);
   font-weight: 700;
   text-align: center;
-  padding: 21px 0;
+  padding: 19px 0;
   padding-top: 12px;
   text-decoration: none;
 }
+
 .navigation-link:hover,
 .navigation-link:focus {
-  color:var(--brown-bg);
+  color: var(--brown-bg);
 }
-.navigation-link:active{
-  color:rgba(117, 97, 87, 0.3);
+
+.navigation-link:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .navigation-link--current {
@@ -196,12 +199,14 @@ body {
   border: 1px solid var(--green-bg);
   background-color: var(--green-bg);
 }
+
 .navigation-user-link svg:hover,
 .navigation-user-link svg:focus {
-  fill:var(--brown-bg);
+  fill: var(--brown-bg);
 }
-.navigation-user-link svg:active{
-  fill:rgba(117, 97, 87, 0.3);
+
+.navigation-user-link svg:active {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .navigation-user-link {
@@ -211,7 +216,7 @@ body {
   color: var(--black);
   font-weight: 700;
   text-align: center;
-  padding: 15px 12px;
+  padding: 15px 11px;
   text-decoration: none;
 }
 
@@ -251,11 +256,17 @@ body {
   min-height: 485px;
   background-color: var(--blue-lightest);
   background-image: url(../images/bg-divider.svg),
-    url(../images/bg-welcome.svg),
     url(../images/bg-index-welcome.jpg);
   background-repeat: no-repeat;
-  background-position: bottom, center 37%, center;
-  background-size: 100% auto, auto, cover;
+  background-position: bottom, center;
+  background-size: 100% auto, cover;
+  border-top: 1px solid var(--white);
+}
+
+.promo-img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 49px;
 }
 
 .reasons {
@@ -276,7 +287,7 @@ body {
 
 .reasons-text {
   margin: 0;
-  margin-top: 25px;
+  margin-top: 27px;
   margin-bottom: 90px;
   padding: 0 274.5px 0 274.5px;
   font-size: 22px;
@@ -397,7 +408,7 @@ body {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -486,7 +497,7 @@ body {
 
 .search-title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   padding: 0 304px;
   font-size: 30px;
   line-height: 36px;
@@ -496,7 +507,7 @@ body {
 
 .search-text {
   margin: 0;
-  margin-bottom: 54px;
+  margin-bottom: 53px;
   padding: 0 304px;
   font-size: 22px;
   line-height: 26px;
@@ -537,7 +548,7 @@ body {
   background-size: cover;
   min-height: 414px;
   text-align: center;
-  padding: 98px 0 102px 0;
+  padding: 96px 0 102px 0;
 }
 
 .subscribe-email {
@@ -590,7 +601,7 @@ body {
 
 .subscribe-title {
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 22px;
   padding: 0 398px;
   font-size: 30px;
   line-height: 36px;
@@ -600,7 +611,7 @@ body {
 
 .subscribe-text {
   margin: 0;
-  margin-bottom: 54px;
+  margin-bottom: 53px;
   font-size: 22px;
   line-height: 26px;
   color: var(--white);
@@ -616,18 +627,20 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   padding: 45px 70px 30px 70px;
   min-height: 120px;
 }
 
 .social-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 17px;
   min-width: 142px;
+  max-width: 200px;
   margin: 0;
-  padding: 0;
+  padding: 0 9px;
   list-style: none;
 }
 
@@ -648,6 +661,14 @@ body {
 .social-link:active svg {
   fill: var(--blue-dark-bg);
   opacity: 0.3;
+}
+
+.creator {
+  margin-left: auto;
+}
+
+.contact {
+  margin-left: 22%;
 }
 
 .contact-link {
@@ -714,6 +735,7 @@ body {
   margin-right: 27px;
   position: relative;
 }
+
 .breadcrumb-item:not(:last-child):after {
   content: "";
   position: absolute;
@@ -864,7 +886,7 @@ body {
 
 .filters-subtitle {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   padding: 0;
   font-size: 20px;
   line-height: 24px;
@@ -945,8 +967,8 @@ body {
 .filters-container-from::after {
   content: "от";
   position: absolute;
-  top: 11%;
-  right: 14px;
+  top: 14%;
+  right: 21px;
   z-index: 5;
 
   font-family: "PT Sans", sans-serif;
@@ -959,8 +981,9 @@ body {
 .filters-container-to::after {
   content: "до";
   position: absolute;
-  top: 11%;
-  right: 14px;
+  top: 14%;
+  right: 20px;
+
   z-index: 5;
 
   font-family: "PT Sans", sans-serif;
@@ -1042,7 +1065,7 @@ body {
   width: 191px;
   height: 36px;
   margin-bottom: 32px;
-  padding: 8px 50px;
+  padding: 9px 50px 8px 54px;
   background-color: var(--blue-bg);
   border-radius: 4px;
   border: none;
@@ -1059,7 +1082,7 @@ body {
 
 .filters-btn-reset {
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 9px 50px 8px 54px;
   width: 191px;
   height: 36px;
   color: var(--white);
@@ -1072,9 +1095,9 @@ body {
 }
 
 .filters-btn-reset:focus {
-  outline: none;
+  outline: 1px solid var(--blue-bg);
   color: var(--white);
-  border: 1px solid var(--blue-bg);
+  border: none;
 }
 
 .filters-btn-reset:active {
@@ -1089,7 +1112,7 @@ body {
 
 .result {
   padding: 0 70px;
-  padding-top: 28px;
+  padding-top: 27px;
   background-color: var(--white);
 }
 
@@ -1262,7 +1285,7 @@ body {
 
 .card-btn {
   width: 140px;
-  height: 36px;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -1285,6 +1308,10 @@ body {
   background-color: var(--brown-dark-bg);
 }
 
+.card-more:active {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .card-more:disabled {
   color: var(--white);
   background-color: var(--grey);
@@ -1302,8 +1329,17 @@ body {
   background-color: var(--blue-dark-bg);
 }
 
+.card-favorite:active {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .card-favorite-active {
   background-color: var(--green-bg);
+}
+
+.card-favorite-active:active {
+  background-color: var(--green-bg);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .card-favorite:disabled {
@@ -1332,7 +1368,7 @@ body {
   padding: 9px 9px;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   color: var(--black);
@@ -1358,9 +1394,6 @@ body {
   background-position: center;
 }
 
-.card-btn:active {
-  color: rgba(255, 255, 255, 0.3);
-}
 
 .pagination-list {
   display: flex;
@@ -1437,7 +1470,7 @@ body {
 
 .subscribe-catalog-title {
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 21px;
   font-size: 30px;
   line-height: 36px;
   color: var(--black);
@@ -1446,7 +1479,7 @@ body {
 
 .subscribe-catalog-text {
   margin: 0;
-  margin-bottom: 53px;
+  margin-bottom: 51px;
   padding: 0 330px;
   font-size: 22px;
   line-height: 26px;
@@ -1454,11 +1487,24 @@ body {
 }
 
 .popup-bg {
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
   width: 100%;
   height: 100%;
-  background-color:var(--white);
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: 2;
+}
+
+.popup-bg-modal {
+  display: block;
+  position: relative;
+}
+
+.popup-bg-modal .popup-module {
+  margin-top: 5%;
+  border: 3px solid var(--blue-bg);
 }
 
 .popup-module {
@@ -1466,18 +1512,17 @@ body {
   width: 717px;
   min-height: 576px;
   margin: 0 auto;
-  margin-top: 5%;
-  padding: 64px 70px;
+  margin-top: 391px;
+  padding: 45px 70px;
   background-color: var(--white);
   border-radius: 30px;
-  border: 3px solid var(--blue-bg);
   z-index: 3;
 }
 
 .popup-close-btn {
   position: absolute;
-  top: 12%;
-  right: 7%;
+  top: 65px;
+  right: 50px;
   width: 52px;
   height: 52px;
   border-radius: 50%;
@@ -1520,6 +1565,7 @@ body {
 }
 
 .popup-title {
+  margin-bottom: 64px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 30px;
@@ -1540,11 +1586,13 @@ body {
   border-radius: 10px;
   background-color: var(--blue-bg);
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .popup-search-btn:hover,
 .popup-search-btn:focus {
   background-color: var(--blue-dark-bg);
+  outline: 3px solid var(--blue-bg);
 }
 
 .popup-search-btn:active {
@@ -1560,6 +1608,14 @@ body {
   margin-bottom: 23px;
 }
 
+.popup-wrapper-quantity {
+  margin-bottom: 49px;
+}
+
+.popup-wrapper-departure {
+  margin-bottom: 21px;
+}
+
 .popup-date {
   margin-right: 15px;
   font-weight: 700;
@@ -1573,6 +1629,7 @@ body {
   line-height: 24px;
   background-color: var(--white-bg);
   border: none;
+  font-family: "PT Sans", sans-serif;
 }
 
 .popup-input-wrapper {
@@ -1589,6 +1646,7 @@ body {
 }
 
 .popup-text {
+  max-width: 440px;
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -1627,7 +1685,7 @@ body {
 
 .popup-input-number {
   width: 31px;
-  padding: 14px 5px;
+  padding: 6px 10px;
   background-color: var(--white-bg);
   border: none;
   text-align: center;
@@ -1635,20 +1693,28 @@ body {
 
 .popup-quantity {
   width: 40px;
-  padding: 14px 10px;
+  padding: 6px 10px;
   font-size: 30px;
   text-align: center;
   color: rgba(117, 97, 87, 0.3);
   background-color: var(--white-bg);
   cursor: pointer;
+  border: none;
 }
 
 .popup-quantity:hover {
   background-color: var(--grey-semi);
+  color: var(--black);
 }
 
 .popup-quantity:focus {
   background-color: var(--grey-semi);
+  outline: 3px solid var(--blue-bg);
+  color: var(--black);
+}
+
+.popup-quantity:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .popup-container {
@@ -1695,6 +1761,7 @@ body {
 .popup-info-btn:hover,
 .popup-info-btn:focus {
   background-color: var(--blue-dark-bg);
+  outline: 3px solid var(--blue-bg);
 }
 
 .popup-info-btn:active {
@@ -1718,7 +1785,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: var(--white);
-  background-color: var(--black);
+  background-color: var(--grey-dark);
   border-radius: 10px;
 }
 
@@ -1729,7 +1796,6 @@ body {
   right: 50%;
   width: 15px;
   height: 15px;
-  border: 1px solid var(--black);
-  background-color: var(--black);
+  background-color: var(--grey-dark);
   transform: rotate(45deg);
 }

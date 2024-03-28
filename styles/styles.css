@@ -875,7 +875,7 @@ body {
 .filters-radio:checked+.filters-name-radio::after {
   content: "";
   position: absolute;
-  left: -32px;
+  left: -31px;
   top: 6px;
   width: 10px;
   height: 10px;

@@ -49,7 +49,7 @@
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <section class="promo" data-test="hero">
           <h2 class="visually-hidden">О Седоне</h2>
-          <img class="promo-img" width="458" height="352" src="images/welcome.png"
+          <img class="promo-img" width="458" height="352" src="images/welcome.svg"
             alt="Welcome to the Gorgeous Sedona Because the Grand Canyon sucks!">
         </section>
         <section class="reasons" data-test="advantages">
@@ -179,7 +179,7 @@
               <div class="popup-wrapper-row">
                 <label class="popup-date popup-date-arrived" for="arrived">Дата Заезда:</label>
                 <div class="popup-input-wrapper">
-                  <input class="popup-input popup-arrived" id="arrived" type="text" value="27 апреля 2020">
+                  <input class="popup-input popup-arrived" name="date-arrived" id="arrived" type="text" value="27 апреля 2020">
                   <p class="popup-text popup-text-error">Мы не можем отправить вас в прошлое.</p>
                   <p class="popup-text popup-text-info visually-hidden">На эти даты есть свободные номера. Пока
                     есть.</p>
@@ -188,7 +188,7 @@
               <div class="popup-wrapper-row popup-wrapper-departure">
                 <label class="popup-date popup-date-departure" for="departure">Дата Выезда:</label>
                 <div class="popup-input-wrapper">
-                  <input class="popup-input popup-departure" id="departure" type="text" value="1 сентября 2023">
+                  <input class="popup-input popup-departure" name="date-departure" id="departure" type="text" value="1 сентября 2023">
                   <p class="popup-text popup-text-error visually-hidden">Мы не можем отправить вас в прошлое.</p>
                   <p class="popup-text popup-text-info">На эти даты есть свободные номера. Пока есть.</p>
                 </div>
@@ -199,7 +199,7 @@
                   <div class="popup-box">
                     <button class="popup-quantity popup-quantity-minus" type="button">
                       <span class="visually-hidden">Убавить</span>-</button>
-                    <input class="popup-input  popup-input-number" id="adults" type="text" value="2">
+                    <input class="popup-input  popup-input-number" name="adult-count" id="adults" type="text" value="2">
                     <button class="popup-quantity popup-quantity-plus" type="button">
                       <span class="visually-hidden">Прибавить</span>+</button>
                   </div>
@@ -215,14 +215,14 @@
                   <div class="popup-box">
                     <button class="popup-quantity popup-quantity-minus" type="button">
                       <span class="visually-hidden">Убавить</span>-</button>
-                    <input class="popup-input popup-input-number" id="children" type="text" value="2">
+                    <input class="popup-input popup-input-number"  name="children-count" id="children" type="text" value="2">
                     <button class="popup-quantity popup-quantity-plus" type="button">
                       <span class="visually-hidden">Прибавить</span>+</button>
                   </div>
                 </div>
               </div>
             </div>
-            <button class="btn popup-search-btn" type="button">Найти</button>
+            <button class="btn popup-search-btn" type="submit">Найти</button>
           </form>
         </div>
       </div>
